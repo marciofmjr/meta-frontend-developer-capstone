@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 function Nav() {
   return <ul className="flex gap-12 font-bold text-slate-50">
-    <li><a href="">Home</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Menu</a></li>
-    <li><a href="">Reservations</a></li>
-    <li><a href="">Order Online</a></li>
-    <li><a href="">Login</a></li>
+    <li><Link className="hover:text-yellow-400" to={`/`}>Home</Link></li>
+    <li><Link className="hover:text-yellow-400" to={`/about`}>About</Link></li>
+    <li><Link className="hover:text-yellow-400" to={`/menu`}>Menu</Link></li>
+    <li><Link className="hover:text-yellow-400" to={`/reservations`}>Reservations</Link></li>
+    <li><Link className="hover:text-yellow-400" to={`/order-online`}>Order Online</Link></li>
+    <li><Link className="hover:text-yellow-400" to={`/login`}>Login</Link></li>
   </ul>
 }
 

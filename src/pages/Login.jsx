@@ -1,12 +1,12 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-function Home() {
+function Login() {
   return <>
     <Header />
-    <h1 className="text-4xl">Home</h1>
+    <h1 className="text-4xl">Login</h1>
     <Footer />
   </>
 }
 
-export default Home;
+export default Login;
