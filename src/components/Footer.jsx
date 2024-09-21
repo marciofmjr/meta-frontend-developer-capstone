@@ -1,5 +1,5 @@
 function Footer() {
-  return <footer>sou um footer</footer>
+  return <footer></footer>
 }
 
 export default Footer;
