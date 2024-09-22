@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import PageTitle from '../components/PageTitle';
+import ReservationCalendar from '../components/ReservationCalendar';
 import ReservationForm from '../components/ReservationForm';
 
 // Função para gerar as próximas duas semanas de quarta a sábado
@@ -68,6 +69,7 @@ function Reservations() {
       <Banner />
       <Main>
         <PageTitle title="Reservations" />
+        <ReservationCalendar availableTimesState={availableTimesState} />
         <ReservationForm availableTimesState={availableTimesState} dispatch={dispatch} />
       </Main>
       <Footer />
