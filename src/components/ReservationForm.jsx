@@ -55,6 +55,7 @@ function ReservationForm({ availableTimesState, dispatch }) {
 
     dispatch({ type: 'RESERVE_TIME', payload: { date: formData.date, time: formData.time } });
     console.log('Reserva feita:', formData);
+    alert('Reserva Feita com Sucesso!');
     clearForm();
   };
 
@@ -71,6 +72,9 @@ function ReservationForm({ availableTimesState, dispatch }) {
             onChange={handleChange}
             min={availableTimesState[0]?.date}
             max={availableTimesState[availableTimesState.length - 1]?.date}
+            aria-required="true"
+            aria-invalid={hasDateError && formSubmited}
+            aria-describedby="dateError"
           />
           {hasDateError && formSubmited ? <div className="error-details">Select a valid date</div> : ''}
         </div>
@@ -83,6 +87,9 @@ function ReservationForm({ availableTimesState, dispatch }) {
             value={formData.time}
             onChange={handleChange}
             disabled={!formData.date || availableTimes.length === 0}
+            aria-required="true"
+            aria-invalid={hasTimeError && formSubmited}
+            aria-describedby="timeError"
           >
             <option value="">--select--</option>
             {availableTimes.map(time => (
@@ -96,12 +103,20 @@ function ReservationForm({ availableTimesState, dispatch }) {
 
         <div>
           <label htmlFor="guests">Number of guests</label>
-          <input type="number" id="guests" placeholder="1" min="1" max="10" value={formData.guests} onChange={handleChange} />
+          <input type="number" id="guests" placeholder="1" min="1" max="10" value={formData.guests} onChange={handleChange} aria-required="true" />
         </div>
 
         <div>
           <label htmlFor="occasion">Occasion</label>
-          <select className={hasOcasionError && formSubmited ? 'error' : ''} id="occasion" value={formData.occasion} onChange={handleChange}>
+          <select
+            className={hasOcasionError && formSubmited ? 'error' : ''}
+            id="occasion"
+            value={formData.occasion}
+            onChange={handleChange}
+            aria-required="true"
+            aria-invalid={hasOcasionError && formSubmited}
+            aria-describedby="occasionError"
+          >
             <option value="">--select--</option>
             <option value="Birthday">Birthday</option>
             <option value="Anniversary">Anniversary</option>
@@ -110,7 +125,7 @@ function ReservationForm({ availableTimesState, dispatch }) {
         </div>
 
         <div>
-          <button type="submit" value="Make Your reservation">
+          <button type="submit" value="Make Your reservation" aria-label="Submit reservation form">
             Submit
           </button>
         </div>
