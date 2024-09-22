@@ -6,7 +6,7 @@ import ImageLemonDessert from './../images/lemon-dessert.png';
 
 function SpecialCard(props) {
   return (
-    <div className="w-full rounded-lg bg-lime-100 overflow-hidden hover:scale-110 transition-all">
+    <div id="specialsSection" className="w-full rounded-lg bg-lime-100 overflow-hidden hover:scale-110 transition-all">
       <img src={props.image} alt={props.title} className="h-72 w-full object-cover object-center" />
       <div className="flex flex-col gap-4 px-8 py-8">
         <h4 className="text-2xl font-bold text-lime-700">{props.title}</h4>

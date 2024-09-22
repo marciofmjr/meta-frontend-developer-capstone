@@ -1,4 +1,4 @@
-import logo from "./../images/logo.png";
+import logo from './../images/logo.png';
 
 function FooterTitle(props) {
   return (
@@ -9,9 +9,11 @@ function FooterTitle(props) {
 }
 
 function FooterLink(props) {
-  return <li className="text-lime-50 hover:text-lime-300 mt-1">
-    <a href="/">{props.title}</a>
-  </li>;
+  return (
+    <li className="text-lime-50 hover:text-lime-300 mt-1">
+      <a href="/">{props.title}</a>
+    </li>
+  );
 }
 
 function Footer() {
@@ -29,8 +31,6 @@ function Footer() {
               <FooterLink title="About" />
               <FooterLink title="Menu" />
               <FooterLink title="Reservations" />
-              <FooterLink title="Order Online" />
-              <FooterLink title="Login" />
             </ul>
           </div>
           <div>
