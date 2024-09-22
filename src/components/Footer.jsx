@@ -18,7 +18,7 @@ function Footer() {
   return (
     <>
       <footer className="full-section bg-lime-900">
-        <div className="section-container p-8 flex justify-between">
+        <div className="section-container flex-col gap-12 p-8 flex justify-between sm:flex-row">
           <div>
             <img src={logo} alt="Logo Footer" className="w-56" />
           </div>
