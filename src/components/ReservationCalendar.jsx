@@ -1,4 +1,3 @@
-// ReservationCalendar.js
 import React from 'react';
 
 function ReservationCalendar({ availableTimesState }) {

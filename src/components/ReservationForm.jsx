@@ -1,4 +1,3 @@
-// ReservationForm.js
 import React, { useEffect, useState } from 'react';
 
 function ReservationForm({ availableTimesState, dispatch }) {
@@ -15,7 +14,6 @@ function ReservationForm({ availableTimesState, dispatch }) {
   const [hasOcasionError, setHasOcasionError] = useState(false);
   const [formSubmited, setFormSubmited] = useState(false);
 
-  // Atualizar os horários disponíveis para a data selecionada
   useEffect(() => {
     if (formData.date) {
       const selectedDay = availableTimesState.find(day => day.date === formData.date);
@@ -55,7 +53,6 @@ function ReservationForm({ availableTimesState, dispatch }) {
       return;
     }
 
-    // Registrar a reserva e atualizar os horários disponíveis
     dispatch({ type: 'RESERVE_TIME', payload: { date: formData.date, time: formData.time } });
     console.log('Reserva feita:', formData);
     clearForm();
@@ -72,8 +69,8 @@ function ReservationForm({ availableTimesState, dispatch }) {
             id="date"
             value={formData.date}
             onChange={handleChange}
-            min={availableTimesState[0]?.date} // Define a primeira data disponível
-            max={availableTimesState[availableTimesState.length - 1]?.date} // Define a última data disponível
+            min={availableTimesState[0]?.date}
+            max={availableTimesState[availableTimesState.length - 1]?.date}
           />
           {hasDateError && formSubmited ? <div className="error-details">Select a valid date</div> : ''}
         </div>
@@ -85,7 +82,7 @@ function ReservationForm({ availableTimesState, dispatch }) {
             id="time"
             value={formData.time}
             onChange={handleChange}
-            disabled={!formData.date || availableTimes.length === 0} // Desativa o campo até que uma data seja selecionada
+            disabled={!formData.date || availableTimes.length === 0}
           >
             <option value="">--select--</option>
             {availableTimes.map(time => (

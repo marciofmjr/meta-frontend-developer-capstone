@@ -1,4 +1,3 @@
-// Reservations.js
 import { useReducer } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -7,7 +6,6 @@ import PageTitle from '../components/PageTitle';
 import ReservationCalendar from '../components/ReservationCalendar';
 import ReservationForm from '../components/ReservationForm';
 
-// Função para gerar as próximas duas semanas de quarta a sábado
 function generateAvailableDates() {
   const availableDates = [];
   const today = new Date();
@@ -19,7 +17,7 @@ function generateAvailableDates() {
     const dayOfWeek = date.getDay();
     if (dayOfWeek >= 3 && dayOfWeek <= 6) {
       availableDates.push({
-        date: date.toISOString().split('T')[0], // Formato yyyy-mm-dd
+        date: date.toISOString().split('T')[0],
         times: ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'],
       });
     }
@@ -27,14 +25,13 @@ function generateAvailableDates() {
   return availableDates;
 }
 
-function initializeTimes() {
+export function initializeTimes() {
   return generateAvailableDates();
 }
 
-function updateTimes(state, action) {
+export function updateTimes(state, action) {
   switch (action.type) {
     case 'UPDATE_DATE':
-      // Encontrar os horários disponíveis para a data selecionada
       return state.map(day => {
         if (day.date === action.payload) {
           return { ...day, isSelected: true };
@@ -43,7 +40,6 @@ function updateTimes(state, action) {
       });
 
     case 'RESERVE_TIME':
-      // Remover o horário reservado da data selecionada
       return state.map(day => {
         if (day.date === action.payload.date) {
           return {
@@ -65,7 +61,6 @@ function Reservations() {
   return (
     <>
       <Header />
-      {/* <Banner /> */}
       <Main>
         <PageTitle title="Reservations" />
         <ReservationCalendar availableTimesState={availableTimesState} />
