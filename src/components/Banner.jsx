@@ -12,7 +12,7 @@ function Banner() {
             Et commodo proident exercitation consectetur ex officia ipsum aliquip est reprehenderit. Enim voluptate Lorem consectetur aliquip non
             proident ea fugiat non dolore nisi.
           </p>
-          <Link to="/reservations" className="p-4 bg-yellow-500 rounded-md text-lg font-bold mt-4 text-lime-900 hover:bg-yellow-400">
+          <Link to="/reservations" className="animate-bounce p-4 bg-yellow-500 rounded-md text-lg font-bold mt-4 text-lime-900 hover:bg-yellow-400">
             Reserve a Table
           </Link>
         </div>

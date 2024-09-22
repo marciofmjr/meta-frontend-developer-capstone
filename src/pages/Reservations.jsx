@@ -1,6 +1,5 @@
 // Reservations.js
 import { useReducer } from 'react';
-import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Main from '../components/Main';
@@ -66,7 +65,7 @@ function Reservations() {
   return (
     <>
       <Header />
-      <Banner />
+      {/* <Banner /> */}
       <Main>
         <PageTitle title="Reservations" />
         <ReservationCalendar availableTimesState={availableTimesState} />
