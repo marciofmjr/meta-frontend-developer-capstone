@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/meta-frontend-developer-capstone/static/css/main.878d52ad.css",
+    "main.js": "/meta-frontend-developer-capstone/static/js/main.a5348a63.js",
+    "static/js/453.fb67ec70.chunk.js": "/meta-frontend-developer-capstone/static/js/453.fb67ec70.chunk.js",
+    "static/media/lemon-dessert.png": "/meta-frontend-developer-capstone/static/media/lemon-dessert.f933f102a2b0c50fa7dd.png",
+    "static/media/greek-salad.png": "/meta-frontend-developer-capstone/static/media/greek-salad.9b3af5b8d726ffc524d2.png",
+    "static/media/bruschetta.png": "/meta-frontend-developer-capstone/static/media/bruschetta.4960e67a4f0773b16635.png",
+    "static/media/banner.jpg": "/meta-frontend-developer-capstone/static/media/banner.7900344922e83e58f9c9.jpg",
+    "static/media/about.jpg": "/meta-frontend-developer-capstone/static/media/about.9b9c6e0736ce84c48cc0.jpg",
+    "static/media/logo.png": "/meta-frontend-developer-capstone/static/media/logo.094fe9b6b426a6178b66.png",
+    "index.html": "/meta-frontend-developer-capstone/index.html",
+    "main.878d52ad.css.map": "/meta-frontend-developer-capstone/static/css/main.878d52ad.css.map",
+    "main.a5348a63.js.map": "/meta-frontend-developer-capstone/static/js/main.a5348a63.js.map",
+    "453.fb67ec70.chunk.js.map": "/meta-frontend-developer-capstone/static/js/453.fb67ec70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.878d52ad.css",
+    "static/js/main.a5348a63.js"
+  ]
+}
