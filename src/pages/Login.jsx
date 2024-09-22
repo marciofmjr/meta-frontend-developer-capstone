@@ -1,12 +1,18 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Main from '../components/Main';
+import PageTitle from '../components/PageTitle';
 
 function Login() {
-  return <>
-    <Header />
-    <h1 className="text-4xl">Login</h1>
-    <Footer />
-  </>
+  return (
+    <>
+      <Header />
+      <Main>
+        <PageTitle title="Login" />
+      </Main>
+      <Footer />
+    </>
+  );
 }
 
 export default Login;
