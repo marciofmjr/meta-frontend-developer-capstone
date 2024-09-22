@@ -2,7 +2,7 @@
 This project was developed as part of [the Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer) course offered by Coursera. The goal of the project is to create a restaurant reservation system for the Little Lemon restaurant, where customers can check available booking times, make reservations, and view existing bookings.
 
 ### Demo
-[Clique here to see this project](https://www.coursera.org/professional-certificates/meta-front-end-developer)
+[Clique here to see this project](https://marciofmjr.github.io/meta-frontend-developer-capstone)
 
 ![Tux, the Linux mascot](/preview.png)
 
