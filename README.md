@@ -29,11 +29,11 @@ The project leverages the following technologies and tools:
 ## 📝 How to Run the Project Locally
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/marciofmjr/meta-frontend-developer-capstone
 ```
 Navigate to the project directory:
 ```bash
-cd your-repository
+cd meta-frontend-developer-capstone
 ```
 Install the dependencies:
 ```bash
