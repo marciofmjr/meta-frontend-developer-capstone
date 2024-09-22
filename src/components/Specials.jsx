@@ -14,7 +14,7 @@ function SpecialCard(props) {
           Labore aliquip sit do sunt ut proident elit reprehenderit ipsum proident incididunt minim exercitation mollit. Commodo non incididunt ut
           nulla fugiat laborum incididunt cillum incididunt
         </p>
-        <Link className="flex items-center gap-2 font-bold text-lime-900 hover:text-lime-600">
+        <Link to="/order-online" className="flex items-center gap-2 font-bold text-lime-900 hover:text-lime-600">
           <span>Order delivery</span>
           <IoMdCart size="20px" />
         </Link>
@@ -31,7 +31,7 @@ function Specials() {
           <h2 className="text-4xl font-bold">Specials</h2>
         </div>
         <div>
-          <Link to="/" className="flex bg-lime-700 hover:bg-lime-600 text-white px-8 py-4 rounded-md text-xl font-bold">
+          <Link to="/menu" className="flex bg-lime-700 hover:bg-lime-600 text-white px-8 py-4 rounded-md text-xl font-bold">
             Online Menu
           </Link>
         </div>
